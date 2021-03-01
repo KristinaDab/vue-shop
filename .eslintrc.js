@@ -9,6 +9,13 @@ module.exports = {
   },
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    
+    "no-multi-spaces": ["error"],
+    "vue/no-multiple-template-root": "off",
+    
+    //For other projects we might not need the next ones 
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
   }
 };
